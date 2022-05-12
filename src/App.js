@@ -1,5 +1,12 @@
+import { FeedbackProvider } from './context/FeedbackContext'
+import FeedbackList from './components/FeedbackList'
+
 function App() {
-  return <div className="App">Feedback App</div>
+  return (
+    <FeedbackProvider>
+      <FeedbackList />
+    </FeedbackProvider>
+  )
 }
 
 export default App
